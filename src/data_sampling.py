@@ -39,6 +39,16 @@ with zipfile.ZipFile(io.BytesIO(response.content)) as z:
     txt = pd.read_csv(z.open("txt.tsv"), sep="\t", low_memory=False)
     tag = pd.read_csv(z.open("tag.tsv"), sep="\t", low_memory=False)
 
+memory_bytes = sum(
+    df.memory_usage(deep=True).sum()
+    for df in [sub, num, txt, tag]
+)
+
+print(
+    f"\nMemory used by the four January 2026 tables: "
+    f"{memory_bytes / (1024**3):.2f} GiB"
+)
+
 
 print("\nOriginal table sizes:")
 print("SUB:", sub.shape)

@@ -1,4 +1,4 @@
-# Scalable Detection of Financial Health Changes and Reporting Anomalies in SEC Corporate Filings
+# Scalable Analysis and Anomaly Detection in SEC Corporate Filings
 
 This repository contains the semester project for EAS 587 – Data-Intensive Computing.
 

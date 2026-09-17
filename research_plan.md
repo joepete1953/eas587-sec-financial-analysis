@@ -1,4 +1,4 @@
-# Scalable Detection of Financial Health Changes and Reporting Anomalies in SEC Corporate Filings
+# Scalable Analysis and Anomaly Detection in SEC Corporate Filings
 
 **Created By:**  
 Joebin Peter Soosairaj  
@@ -104,32 +104,37 @@ Keeping these areas outside the project helps keep the work focused on scalable 
 
 ## 4. Prior Research and References
 
-Previous research has shown that corporate financial information can be useful for identifying financial distress and other changes in company health. Traditional approaches commonly use accounting ratios, while more recent studies have explored machine learning and textual information from corporate reports.
+Previous research has shown that corporate financial information can be useful for identifying financial distress and changes in company health. Traditional approaches commonly rely on accounting ratios, while more recent studies have explored machine learning and textual information from corporate reports.
 
-Zhao, Xu and Ji studied financial distress prediction using both detailed financial data and Management Discussion and Analysis text. Their results showed that detailed financial data provides useful predictive information and that textual disclosures can provide additional information in some settings.
+Zhao, Xu and Ji (2023) studied financial distress prediction using detailed financial information together with Management Discussion and Analysis text from Chinese listed companies. Their results showed that detailed financial data itself provides strong predictive information. They also found that textual disclosures can add information when used with financial ratios, although their additional value becomes smaller when detailed financial data is already available.
 
-Hajek and Munk investigated the use of risk-related text from annual reports for financial distress prediction. Their work used natural language processing and machine learning techniques to extract information from corporate disclosures.
+Hajek and Munk (2024) investigated risk-related sections of corporate annual reports. Their approach used natural language processing methods, including BERT-based text analysis, together with machine learning methods such as XGBoost to predict financial distress. Their work shows that narrative information contained in company reports can also contribute to financial health analysis.
 
-Other recent research has also explored machine learning approaches for financial distress prediction and has shown that models can identify relationships between financial indicators that may be difficult to capture using traditional methods alone.
+Lokanan and Ramzan (2024) studied financial distress prediction using data from 464 companies listed on the Toronto Stock Exchange. They compared several machine learning approaches, including logistic regression, decision trees, random forests, support vector machines and artificial neural networks. Their study demonstrates how financial ratios and company-level financial indicators can be used with machine learning to identify patterns associated with financial distress.
 
-Our project differs slightly from these studies because the main focus is not only prediction. We first want to build a scalable data pipeline capable of processing many years of SEC filings and then investigate changes and anomalies across companies and industries. Predictive modeling may be introduced later after the large-scale data processing and exploratory work is complete.
+Our project differs from these studies because the main focus is not immediately building a financial distress prediction model. We first want to build a scalable data pipeline capable of processing many years of SEC filings containing both numerical and textual information. We will then investigate changes and unusual reporting patterns across companies and industries. Predictive modeling may be introduced later if the exploratory analysis shows that the available data supports it.
 
 ### Initial References
 
-1. U.S. Securities and Exchange Commission. "Financial Statement and Notes Data Sets."  
+1. U.S. Securities and Exchange Commission. "Financial Statement and Notes Data Sets."
+
    https://www.sec.gov/data-research/sec-markets-data/financial-statement-notes-data-sets
 
-2. U.S. Securities and Exchange Commission. "Financial Statement and Notes Data Sets – Technical Documentation."  
+2. U.S. Securities and Exchange Commission. "Financial Statement and Notes Data Sets – Technical Documentation."
+
    https://www.sec.gov/files/fsnds_2.pdf
 
-3. Zhao, Q., Xu, W., and Ji, Y. (2023). "Predicting financial distress of Chinese listed companies using machine learning: To what extent does textual disclosure matter?" International Review of Financial Analysis, 89, 102770.  
+3. Zhao, Q., Xu, W., and Ji, Y. (2023). "Predicting financial distress of Chinese listed companies using machine learning: To what extent does textual disclosure matter?" International Review of Financial Analysis, 89, 102770.
+
    https://doi.org/10.1016/j.irfa.2023.102770
 
-4. Hajek, P., and Munk, M. (2024). "Corporate financial distress prediction using the risk-related information content of annual reports." Information Processing & Management, 61, 103820.  
+4. Hajek, P., and Munk, M. (2024). "Corporate financial distress prediction using the risk-related information content of annual reports." Information Processing & Management, 61, 103820.
+
    https://doi.org/10.1016/j.ipm.2024.103820
 
-5. Nour, A. N. I., Lokanan, M. E., and Ramzan, S. (2024). "Predicting financial distress in TSX-listed firms using machine learning algorithms."  
-   https://pmc.ncbi.nlm.nih.gov/articles/PMC11631907/
+5. Lokanan, M. E., and Ramzan, S. (2024). "Predicting financial distress in TSX-listed firms using machine learning algorithms." Frontiers in Artificial Intelligence, 7, 1466321.
+
+   https://doi.org/10.3389/frai.2024.1466321
 
 The reference list will be expanded as the project develops, especially once the final anomaly detection and machine learning methods have been selected.
 
@@ -188,13 +193,19 @@ This initial test confirmed that the dataset contains both structured numerical 
 
 ### Why This Is a Data-Intensive Computing Problem
 
-The complete dataset cannot be treated as one simple CSV file.
+The SEC dataset is not provided as one simple analysis-ready CSV file. It is distributed across many historical archives and eight related tables containing filing information, numerical facts, textual disclosures and supporting reporting information.
 
-The data is divided across many historical archives and eight connected tables. A meaningful analysis requires joining large numbers of financial facts with submission information, XBRL tags, dimensions and other supporting tables.
+Meaningful analysis therefore requires downloading data in batches, joining records across tables and processing information across many companies and reporting periods. The combination of dataset size, table relationships and large textual disclosures makes processing the complete archive in a normal in-memory pandas workflow impractical.
 
-The project also covers many years of filings and thousands of companies. Processing the complete history using a normal in-memory pandas workflow would become increasingly slow and inefficient.
+### Dataset Scale and Local Memory Constraints
 
-For this reason, the project will use smaller samples during development and progressively move toward distributed processing for the larger historical dataset.
+The complete SEC Financial Statement and Notes archive is approximately 25.5 GB in compressed form and is distributed across many historical ZIP packages rather than one analysis-ready file.
+
+To measure the local memory requirements more realistically, we loaded four core tables from the January 2026 package using pandas. The SUB table contained 5,428 rows and 40 columns, NUM contained 505,197 rows and 16 columns, TXT contained 190,846 rows and 20 columns, and TAG contained 69,559 rows and 9 columns. Together, these four tables contained 771,030 records and used approximately 0.46 GiB of memory after being loaded into pandas.
+
+The January 2026 package shows that the in-memory representation is substantially larger than the compressed download. Since the full archive is approximately 25.5 GB compressed and our development machine has 16 GiB of RAM, processing the full archive as one in-memory pandas dataset would not be practical.
+
+For local exploration, the data will therefore be processed in individual monthly or quarterly packages. For Phase 2, we will construct a representative working dataset containing approximately 250,000 records or more while preserving multiple companies, filing periods and relevant financial concepts. Larger-scale joins and analysis will later be moved to scalable formats and distributed tools such as Parquet and Apache Spark.
 
 ### Data Access Strategy
 
@@ -211,7 +222,6 @@ The expected tools for the project include:
 - Python
 - Pandas
 - Apache Spark / PySpark
-- Jupyter or Google Colab for initial exploration
 - Visual Studio Code
 - Git and GitHub
 - Parquet for processed data storage
