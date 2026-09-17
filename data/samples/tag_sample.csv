@@ -1,0 +1,101 @@
+tag,version,custom,abstract,datatype,iord,crdr,tlabel,doc
+A.G.P.AllianceGlobalPartnersMember,0001628280-26-001793,1,1,member,,,A.G.P. / Alliance Global Partners [Member],A.G.P. / Alliance Global Partners
+A0.110Due2026Member,0000080424-26-000006,1,1,member,,,0.110% due 2026 [Member],0.110% due 2026
+A0.110NotesDue2026Domain,0000080424-26-000002,1,1,member,,,0.110% Notes due 2026 [Domain],0.110% Notes due 2026
+A0.110NotesDue2026Domain,0000080424-26-000009,1,1,member,,,0.110% Notes due 2026 [Domain],0.110% Notes due 2026
+A0.110NotesDue2026Member,0000080424-26-000011,1,1,member,,,0.110% Notes due 2026 [Member],0.110% Notes due 2026
+A0.125Notesdue2026Member,0001628280-26-002116,1,1,member,,,0.125% Notes due 2026 [Member],0.125% Notes due 2026 [Member]
+A0.230Due2031Member,0000080424-26-000006,1,1,member,,,0.230% due 2031 [Member],0.230% due 2031
+A0.230NotesDue2031Domain,0000080424-26-000002,1,1,member,,,0.230% Notes due 2031 [Domain],0.230% Notes due 2031
+A0.230NotesDue2031Domain,0000080424-26-000009,1,1,member,,,0.230% Notes due 2031 [Domain],0.230% Notes due 2031
+A0.230NotesDue2031Member,0000080424-26-000011,1,1,member,,,0.230% Notes due 2031 [Member],0.230% Notes due 2031
+A0.250SeniorNotesDue2028Member,0000103379-26-000011,1,1,member,,,0.250% Senior Notes due 2028 [Member],0.250% Senior Notes due 2028
+A0.2SeniorNotesDue2026Member,0000313616-26-000002,1,1,member,,,0.2% Senior Notes Due 2026 [Member],0.2% Senior Notes Due 2026 [Member]
+A0.2SeniorNotesDue2026Member,0000313616-26-000004,1,1,member,,,0.2% Senior Notes Due 2026 [Member],0.2% Senior Notes Due 2026 [Member]
+A0.350Due2030Member,0000080424-26-000006,1,1,member,,,0.350% due 2030 [Member],0.350% due 2030
+A0.350NotesDue2030Domain,0000080424-26-000002,1,1,member,,,0.350% Notes due 2030 [Domain],0.350% Notes due 2030
+A0.350NotesDue2030Domain,0000080424-26-000009,1,1,member,,,0.350% Notes due 2030 [Domain],0.350% Notes due 2030
+A0.350NotesDue2030Member,0000080424-26-000011,1,1,member,,,0.350% Notes due 2030 [Member],0.350% Notes due 2030
+A0.45SeniorNotesDue2028Member,0000313616-26-000002,1,1,member,,,0.45% Senior Notes Due 2028 [Member],0.45% Senior Notes Due 2028 [Member]
+A0.45SeniorNotesDue2028Member,0000313616-26-000004,1,1,member,,,0.45% Senior Notes Due 2028 [Member],0.45% Senior Notes Due 2028 [Member]
+A0.500NotesDue2026Member,0000021665-26-000003,1,1,member,,,0.500% Notes Due 2026 [Member],0.500% Notes Due 2026 [Member]
+A0.500Notesdue2031Member,0000320193-26-000005,1,1,member,,,0.500% Notes due 2031 [Member],0.500% Notes due 2031 [Member]
+A0.500Notesdue2031Member,0000320193-26-000006,1,1,member,,,0.500% Notes due 2031 [Member],0.500% Notes due 2031 [Member]
+A0.625SeniorConvertibleNotesMember,0001628280-26-004138,1,1,member,,,0.625% Senior Convertible Notes [Member],0.625% Senior Convertible Notes
+A0.625SeniorNotesDue2032Member,0000103379-26-000011,1,1,member,,,0.625% Senior Notes due 2032 [Member],0.625% Senior Notes due 2032
+A0.75SeniorNotesDue2031Member,0000313616-26-000002,1,1,member,,,0.75% Senior Notes Due 2031 [Member],0.75% Senior Notes Due 2031 [Member]
+A0.75SeniorNotesDue2031Member,0000313616-26-000004,1,1,member,,,0.75% Senior Notes Due 2031 [Member],0.75% Senior Notes Due 2031 [Member]
+A0.800Notesdue2031Member,0001628280-26-002116,1,1,member,,,0.800% Notes due 2031 [Member],0.800% Notes due 2031 [Member]
+A0.875NotesDue2027Member,0000732712-26-000003,1,1,member,,,0.875% Notes Due 2027 [Member],0.875% Notes Due 2027 [Member]
+A0.875NotesDue2027Member,0001193125-26-010395,1,1,member,,,0.875% Notes Due 2027 [Member],
+A0.875NotesDue2027Member,0001193125-26-016059,1,1,member,,,0.875% Notes Due 2027 [Member],
+A0.875NotesDue2027Member,0001193125-26-030578,1,1,member,,,0.875% Notes Due 2027 [Member],
+A0.875NotesDue2032Member,0000732712-26-000003,1,1,member,,,0.875% Notes Due 2032 [Member],0.875% Notes Due 2032 [Member]
+A0.875NotesDue2032Member,0001193125-26-010395,1,1,member,,,0.875% Notes Due 2032 [Member],
+A0.875NotesDue2032Member,0001193125-26-016059,1,1,member,,,0.875% Notes Due 2032 [Member],
+A0.875NotesDue2032Member,0001193125-26-030578,1,1,member,,,0.875% Notes Due 2032 [Member],
+A0.875Notesdue2039Member,0000021665-26-000003,1,1,member,,,0.875% Notes due 2039 [Member],0.875% Notes due 2039 [Member]
+A0.900Due2041Member,0000080424-26-000006,1,1,member,,,0.900% due 2041 [Member],0.900% due 2041
+A0.900NotesDue2041Domain,0000080424-26-000002,1,1,member,,,0.900% Notes due 2041 [Domain],0.900% Notes due 2041
+A0.900NotesDue2041Domain,0000080424-26-000009,1,1,member,,,0.900% Notes due 2041 [Domain],0.900% Notes due 2041
+A0.900NotesDue2041Member,0000080424-26-000011,1,1,member,,,0.900% Notes due 2041 [Member],0.900% Notes due 2041
+A0250SeniorNotesDue2028Member,0000103379-26-000004,1,1,member,,,0.250% Senior Notes due 2028 [Member],0.250% Senior Notes due 2028
+A0250SeniorNotesDue2028Member,0000103379-26-000008,1,1,member,,,0.250% Senior Notes due 2028 [Member],0.250% Senior Notes due 2028
+A0250SeniorNotesDue2028Member,0000103379-26-000013,1,1,member,,,0.250% Senior Notes due 2028 [Member],0.250% Senior Notes due 2028
+A0300NotesDue2029Member,0000021665-26-000003,1,1,member,,,0.300% Notes Due 2029 [Member],0.300% Notes Due 2029
+A0318NotesDue2026Member,0001781335-26-000004,1,1,member,,,0.318% Notes due 2026 [Member],0.318% Notes due 2026
+A0375NotesDue2029Member,0000732712-26-000003,1,1,member,,,0.375% Notes Due 2029 [Member],0.375% Notes Due 2029
+A0375NotesDue2029Member,0001193125-26-010395,1,1,member,,,0.375% Notes Due 2029 [Member],
+A0375NotesDue2029Member,0001193125-26-016059,1,1,member,,,0.375% Notes Due 2029 [Member],
+A0375NotesDue2029Member,0001193125-26-030578,1,1,member,,,0.375% Notes Due 2029 [Member],
+A0400SeniorNotesDue2027Member,0001053507-26-000026,1,1,member,,,0.400% Senior Notes Due 2027 [Member],0.400% Senior Notes Due 2027
+A0400SeniorNotesDue2027Member,0001053507-26-000028,1,1,member,,,0.400% Senior Notes Due 2027 [Member],0.400% Senior Notes Due 2027
+A0450SeniorNotesDue2027Member,0001053507-26-000026,1,1,member,,,"0.450% Senior Notes, Due 2027 [Member]","0.450% Senior Notes, Due 2027"
+A0450SeniorNotesDue2027Member,0001053507-26-000028,1,1,member,,,"0.450% Senior Notes, Due 2027 [Member]","0.450% Senior Notes, Due 2027"
+A0500EuroNotesDue2028Member,0000002969-26-000008,1,1,member,,,0.500% Euro Notes due 2028 [Member],0.500% Euro Notes due 2028
+A0500NotesDue2028Member,0000002969-26-000006,1,1,member,,,0.500% Notes due 2028 [Member],0.500% Notes due 2028
+A0500NotesDue2028Member,0001193125-26-029381,1,1,member,,,A 0500 Notes Due 2028 [Member],
+A0500NotesDueMarch152027Member,0001751788-26-000009,1,1,member,,,"0.500% Notes due March 15, 2027 [Member]","0.500% Notes due March 15, 2027"
+A0500SeniorNotesDue2028Member,0001053507-26-000026,1,1,member,,,0.500% Senior Notes Due 2028 [Member],0.500% Senior Notes Due 2028
+A0500SeniorNotesDue2028Member,0001053507-26-000028,1,1,member,,,0.500% Senior Notes Due 2028 [Member],0.500% Senior Notes Due 2028
+A0625SeniorNotesDue2032Member,0000103379-26-000004,1,1,member,,,0.625% Senior Notes due 2032 [Member],0.625% Senior Notes due 2032
+A0625SeniorNotesDue2032Member,0000103379-26-000008,1,1,member,,,0.625% Senior Notes due 2032 [Member],0.625% Senior Notes due 2032
+A0625SeniorNotesDue2032Member,0000103379-26-000013,1,1,member,,,0.625% Senior Notes due 2032 [Member],0.625% Senior Notes due 2032
+A0750NotesDue2027Member,0000029905-26-000004,1,1,member,,,0.750 Notes Due 2027 [Member],0.750 Notes Due 2027
+A0750NotesDue2032Member,0000732712-26-000003,1,1,member,,,0.750% Notes Due 2032 [Member],0.750% Notes Due 2032
+A0750NotesDue2032Member,0001193125-26-010395,1,1,member,,,0.750% Notes Due 2032 [Member],
+A0750NotesDue2032Member,0001193125-26-016059,1,1,member,,,0.750% Notes Due 2032 [Member],
+A0750NotesDue2032Member,0001193125-26-030578,1,1,member,,,0.750% Notes Due 2032 [Member],
+A0800EuroNotesDue2032Member,0000002969-26-000008,1,1,member,,,0.800% Euro Notes due 2032 [Member],0.800% Euro Notes due 2032
+A0800NotesDue2032Member,0000002969-26-000006,1,1,member,,,0.800% Notes due 2032 [Member],0.800% Notes due 2032
+A0875SeniorNotesDue2029Member,0001053507-26-000026,1,1,member,,,"0.875% Senior Notes, Due 2029 [Member]","0.875% Senior Notes, Due 2029"
+A0875SeniorNotesDue2029Member,0001053507-26-000028,1,1,member,,,"0.875% Senior Notes, Due 2029 [Member]","0.875% Senior Notes, Due 2029"
+A090NotesDueFeb2026Member,0000063754-26-000037,1,1,member,,,0.90% Notes due Feb 2026 [Member],0.90% Notes due Feb 2026
+A0934NotesDue2031Member,0001781335-26-000004,1,1,member,,,0.934% Notes due 2031 [Member],0.934% Notes due 2031
+A0950SeniorNotesDue2030Member,0001053507-26-000026,1,1,member,,,0.950% Senior Notes Due 2030 [Member],0.950% Senior Notes Due 2030
+A0950SeniorNotesDue2030Member,0001053507-26-000028,1,1,member,,,0.950% Senior Notes Due 2030 [Member],0.950% Senior Notes Due 2030
+A1.000SeniorNotesDue2029Member,0000815097-26-000007,1,1,member,,,1.000% Senior Notes Due 2029 [Member],1.000% Senior Notes Due 2029 [Member]
+A1.000SeniorNotesDue2032Member,0001053507-26-000026,1,1,member,,,1.000% Senior Notes Due 2032 [Member],1.000% Senior Notes Due 2032
+A1.000SeniorNotesDue2032Member,0001053507-26-000028,1,1,member,,,1.000% Senior Notes Due 2032 [Member],1.000% Senior Notes Due 2032
+A1.0BRevolvingCreditFacilityMember,0000703351-26-000006,1,1,member,,,1.0B Revolving Credit Facility [Member],1.0B Revolving Credit Facility
+A1.150NotesDueNovember2028Member,0000200406-26-000002,1,1,member,,,1.150% Notes Due November 2028 [Member],1.150% Notes Due November 2028
+A1.200Due2028Member,0000080424-26-000006,1,1,member,,,1.200% due 2028 [Member],1.200% due 2028
+A1.200NotesDue2028Domain,0000080424-26-000002,1,1,member,,,1.200% Notes due 2028 [Domain],1.200% Notes due 2028
+A1.200NotesDue2028Domain,0000080424-26-000009,1,1,member,,,1.200% Notes due 2028 [Domain],1.200% Notes due 2028
+A1.200NotesDue2028Member,0000080424-26-000011,1,1,member,,,1.200% Notes due 2028 [Member],1.200% Notes due 2028
+A1.250Due2029Member,0000080424-26-000006,1,1,member,,,1.250% due 2029 [Member],1.250% due 2029
+A1.250NotesDue2029Domain,0000080424-26-000002,1,1,member,,,1.250% Notes due 2029 [Domain],1.250% Notes due 2029
+A1.250NotesDue2029Domain,0000080424-26-000009,1,1,member,,,1.250% Notes due 2029 [Domain],1.250% Notes due 2029
+A1.250NotesDue2029Member,0000080424-26-000011,1,1,member,,,1.250% Notes due 2029 [Member],1.250% Notes due 2029
+A1.250NotesDue2030Member,0000732712-26-000003,1,1,member,,,1.250% Notes Due 2030 [Member],1.250% Notes Due 2030 [Member]
+A1.250NotesDue2030Member,0001193125-26-010395,1,1,member,,,1.250% Notes Due 2030 [Member],
+A1.250NotesDue2030Member,0001193125-26-016059,1,1,member,,,1.250% Notes Due 2030 [Member],
+A1.250NotesDue2030Member,0001193125-26-030578,1,1,member,,,1.250% Notes Due 2030 [Member],
+A1.2SeniorNotesDue2027Member,0000313616-26-000002,1,1,member,,,1.2% Senior Notes Due 2027 [Member],1.2% Senior Notes Due 2027 [Member]
+A1.2SeniorNotesDue2027Member,0000313616-26-000004,1,1,member,,,1.2% Senior Notes Due 2027 [Member],1.2% Senior Notes Due 2027 [Member]
+A1.35SeniorNotesDue2039Member,0000313616-26-000002,1,1,member,,,1.35% Senior Notes Due 2039 [Member],1.35% Senior Notes Due 2039 [Member]
+A1.35SeniorNotesDue2039Member,0000313616-26-000004,1,1,member,,,1.35% Senior Notes Due 2039 [Member],1.35% Senior Notes Due 2039 [Member]
+A1.375NotesDue2026Member,0000732712-26-000003,1,1,member,,,1.375% Notes Due 2026 [Member],1.375% Notes Due 2026 [Member]
+A1.375NotesDue2026Member,0001193125-26-010395,1,1,member,,,1.375% Notes Due 2026 [Member],
+A1.375NotesDue2026Member,0001193125-26-016059,1,1,member,,,1.375% Notes Due 2026 [Member],
+A1.375NotesDue2026Member,0001193125-26-030578,1,1,member,,,1.375% Notes Due 2026 [Member],
